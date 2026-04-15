@@ -603,50 +603,110 @@ local marcacoes = {
 -- 	end
 -- end)
 
-local promptLojaId = "dp_inventory_shop_prompt"
+local promptId = "dpn_global_prompt"
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
         local idle = 1000
-        local showingPrompt = false
+        local ped = PlayerPedId()
+        local coords = GetEntityCoords(ped)
 
-        if not menuactive then
-            local ped = PlayerPedId()
-            local pCords = GetEntityCoords(ped)
+        local showing = false
 
-            for i = 1, #marcacoes do
-                local distance = #(pCords - marcacoes[i])
+        -- 🔹 LOJAS (Config)
+        for shopType, typeData in pairs(ConfigClient.lojas) do
+            for _, shopLocs in pairs(typeData.locs) do
+                local dist = #(coords - vector3(shopLocs[1], shopLocs[2], shopLocs[3]))
 
-                if distance < 10.0 then
-                    idle = 3
+                if dist <= ConfigClient.distance then
+                    idle = 0
+                    showing = true
 
-                    if distance < 2.0 then
-                        showingPrompt = true
-
-                        exports["ghost_ui"]:ShowPrompt({
-                            id = promptLojaId,
-                            coords = vector3(marcacoes[i].x, marcacoes[i].y, marcacoes[i].z + 1.25),
-                            key = "E",
-                            text = "Acessar a Loja",
-                            type = "default",
-                            maxDistance = 2.0,
-                            offset = 0.0,
-                            priority = 10,
-                            active = true
-                        })
-
-                        if IsControlJustPressed(0, 38) then -- E
-                            ToggleActionMenu()
-                        end
-
-                        break
-                    end
+                    exports["ghost_ui"]:ShowPrompt({
+                        id = promptId,
+                        coords = vector3(shopLocs[1], shopLocs[2], shopLocs[3]),
+                        key = "E",
+                        text = "Abrir loja",
+                        type = "default",
+                        maxDistance = 2.5,
+                        offset = 0.5,
+                        priority = 5,
+                        active = true
+                    })
                 end
             end
         end
 
-        if not showingPrompt then
-            exports["ghost_ui"]:HidePrompt(promptLojaId)
+        -- 🔹 BAÚ FAC (Config)
+        for chest, chestData in pairs(ConfigClient.chestFac) do
+            local loc = chestData.loc
+            local dist = #(coords - vector3(loc[1], loc[2], loc[3]))
+
+            if dist <= ConfigClient.distance then
+                idle = 0
+                showing = true
+
+                exports["ghost_ui"]:ShowPrompt({
+                    id = promptId,
+                    coords = vector3(loc[1], loc[2], loc[3]),
+                    key = "E",
+                    text = "Abrir baú",
+                    type = "default",
+                    maxDistance = 2.5,
+                    offset = 0.5,
+                    priority = 6,
+                    active = true
+                })
+            end
+        end
+
+        -- 🔹 LOJINHAS CUSTOM (array antigo)
+        for _, v in pairs(lojinhas or {}) do
+            local dist = #(coords - vector3(v[1], v[2], v[3]))
+
+            if dist <= 2.0 then
+                idle = 0
+                showing = true
+
+                exports["ghost_ui"]:ShowPrompt({
+                    id = promptId,
+                    coords = vector3(v[1], v[2], v[3]),
+                    key = "E",
+                    text = "Abrir loja",
+                    type = "default",
+                    maxDistance = 2.5,
+                    offset = 0.5,
+                    priority = 7,
+                    active = true
+                })
+            end
+        end
+
+        -- 🔹 BAÚS CUSTOM
+        for _, v in pairs(bausfacs or {}) do
+            local dist = #(coords - vector3(v[1], v[2], v[3]))
+
+            if dist <= 2.0 then
+                idle = 0
+                showing = true
+
+                exports["ghost_ui"]:ShowPrompt({
+                    id = promptId,
+                    coords = vector3(v[1], v[2], v[3]),
+                    key = "E",
+                    text = "Abrir baú",
+                    type = "default",
+                    maxDistance = 2.5,
+                    offset = 0.5,
+                    priority = 8,
+                    active = true
+                })
+            end
+        end
+
+        -- 🔻 ESCONDE QUANDO NÃO ESTÁ PERTO
+        if not showing then
+            exports["ghost_ui"]:HidePrompt(promptId)
         end
 
         Wait(idle)
