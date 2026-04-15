@@ -1,0 +1,2762 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200&display=swap");
+body,
+[class~=container] #right footer [class~=quick-actions] div:last-child {
+    margin-left: 0;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    background-image: url(../html/assets/images/male.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body,
+[class~=container] #right footer [class~=quick-actions] div:last-child {
+    margin-bottom: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions] div:last-child {
+    margin-right: 0;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    left: 16%;
+}
+
+[class~=container] #right header [class~=title] {
+    position: relative;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    top: 4.3%;
+}
+
+[class~=container] #right header [class~=account] [class~=card2]:nth-child(2),
+[class~=container] #right header [class~=account] [class~=card]:nth-child(2) {
+    color: #37383c;
+}
+
+[class~=container] #left,
+[class~=container] #right header [class~=account] [class~=right-pic],
+[class~=container] #left [class~=icones],
+[class~=container],
+[class~=container] #right header [class~=right-box] {
+    position: absolute;
+}
+
+[class~=container] #right header [class~=title] {
+    padding-left: 1.875pc;
+}
+
+[class~=container] #right header [class~=title] {
+    padding-bottom: 1.25pc;
+}
+
+[class~=container] #right header [class~=title] {
+    padding-right: 1.875pc;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    font-size: 13px;
+}
+
+[class~=container] #right header [class~=title] {
+    padding-top: 1.25pc;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    width: 150px;
+}
+
+[class~=container] #left {
+    box-shadow: .625pc 7.5pt 18.75pt -.125in rgba(0, 0, 0, .32);
+}
+
+.container #right footer .item-extract-box .item .item-text-price span,
+[class~=container] #right header [class~=title] span {
+    color: #646568;
+}
+
+[class~=container] #right header [class~=right-box],
+[class~=container] #right header [class~=title] {
+    font-size: 9pt;
+}
+
+[class~=container] #right header [class~=title] {
+    color: #f00;
+}
+
+[class~=container] #right header [class~=title] {
+    display: inline-flex;
+}
+
+[class~=container] #right header [class~=account] [class~=right-pic] {
+    height: 9.375pc;
+    border-radius: 7.5pt;
+    padding-top: 20px;
+    display: block;
+    margin-left: 6%;
+    margin-right: auto;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-radius: 7.5pt;
+}
+
+[class~=container] #right header [class~=title] {
+    white-space: nowrap;
+}
+
+[class~=container] #right footer [class~=quick-actions] div:last-child {
+    margin-top: 0;
+}
+
+[class~=container] #right header [class~=right-box] {
+    box-shadow: -5.25pt 0in .260416667in -.125in rgba(0, 0, 0, .44);
+}
+
+[class~=container] #right header [class~=right-box] {
+    left: 71%;
+}
+
+[class~=container] #right header [class~=right-box] {
+    width: 15.75pc;
+}
+
+[class~=container] #right header [class~=right-box] {
+    height: 6.441667in;
+}
+
+[class~=container] #right footer [class~=quick-actions] div {
+    color: #aaa;
+}
+
+[class~=container] #right header [class~=account] [class~=item-box] [class~=nome] {
+    position: absolute;
+    font-size: 1.375pc;
+    height: 230px;
+    width: 180pt;
+    border-radius: 7.5pt;
+    white-space: nowrap;
+    padding-left: .9375pc;
+    padding-bottom: 7px;
+    padding-right: .9375pc;
+    padding-top: 26px;
+    background-color: transparent;
+    bottom: 37%;
+    /* right: 1px; */
+    left: 8.75pt;
+    text-overflow: ellipsis;
+    text-align: center;
+    overflow: hidden;
+}
+
+[class~=container] #right header [class~=right-box] {
+    padding-left: .9375pc;
+}
+
+[class~=container] #right header [class~=right-box] {
+    padding-bottom: 7px;
+}
+
+[class~=container] #right header [class~=right-box] {
+    bottom: 11px;
+}
+
+[class~=container] #right header [class~=right-box] {
+    padding-right: .9375pc;
+}
+
+[class~=container] #right header [class~=right-box] {
+    padding-top: 26px;
+}
+
+[class~=container] #left {
+    top: 15px;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-left-style: solid;
+}
+
+[class~=container] #right header [class~=right-box] {
+    text-align: center;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right header [class~=right-box] {
+    background-color: #f5d800;
+}
+
+.container #right footer .quick-actions3 div:last-child,
+[class~=container] #right footer [class~=quick-actions2] div:last-child {
+    margin-left: 0;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-left-width: .010416667in;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-bottom-width: .010416667in;
+}
+
+[class~=container] #right footer [class~=quick-actions2] div:last-child {
+    margin-bottom: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions0] div:last-child {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions2] div:last-child,
+body {
+    margin-right: 0;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-right-style: solid;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-right-width: .010416667in;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-top-width: .010416667in;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-top-style: solid;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-left-color: rgba(255, 255, 255, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions2] div:last-child,
+body {
+    margin-top: 0;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-bottom-color: rgba(255, 255, 255, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions]:hover,
+.container #right footer .quick-actions2:hover {
+    background-color: #f5d800;
+}
+
+.container #right footer .quick-actions0:hover {
+    background-color: #f5d800;
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-right-color: rgba(255, 255, 255, .301);
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-top-color: rgba(255, 255, 255, .301);
+}
+
+[class~=container] #right header [class~=right-box] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    opacity: 1;
+}
+
+[class~=container] #right footer [class~=quick-actions]:hover,
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover {
+    padding-left: 3.75pt;
+}
+
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover,
+[class~=container] #right footer [class~=quick-actions]:hover {
+    padding-bottom: 3.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions]:hover,
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover {
+    padding-right: 3.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    transform: scale(1);
+}
+
+[class~=container] #right header [class~=account] [class~=card] img,
+[class~=container] #right header [class~=title] #data,
+[class~=container] #right footer [class~=quick-actions] {
+    position: absolute;
+}
+
+[class~=container] {
+    left: 50%;
+}
+
+[class~=container] #right footer [class~=quick-actions]:hover,
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover {
+    padding-top: 3.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    width: 100pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    height: 100pt;
+}
+
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover,
+[class~=container] #right footer [class~=quick-actions]:hover {
+    cursor: pointer;
+}
+
+[class~=container] #right footer [class~=quick-actions]:hover,
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover {
+    transform: scale(1.05);
+}
+
+.container #right footer .quick-actions2:hover,
+.container #right footer .quick-actions0:hover,
+[class~=container] #right footer [class~=quick-actions]:hover {
+    color: #fff;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    font-size: .75pc;
+}
+
+[class~=container] #right footer {
+    width: 100%;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    margin-top: 11.75pc;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    background-image: url(/html/assets/images/D2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    padding-left: 11.25pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    padding-bottom: .072916667in;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    padding-right: 11.25pt;
+}
+
+.container #right footer .quick-actions3 div:last-child {
+    margin-bottom: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    padding-top: .072916667in;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-radius: 7.5pt;
+}
+
+.container #right footer .item-extract-box .item .item-text-price span {
+    font-size: .083333333in;
+}
+
+body {
+    padding-left: 0;
+}
+
+[class~=container] #left {
+    left: 1%;
+}
+
+.container #right footer .quick-actions3 div:last-child {
+    margin-right: 0;
+}
+
+.container #right footer .quick-actions3 div:last-child {
+    margin-top: 0;
+}
+
+[class~=container] #right footer {
+    height: 260px;
+}
+
+[class~=container] #right header [class~=account] [class~=item-box] [class~=emprego],
+[class~=container] #right footer [class~=quick-actions] {
+    text-align: center;
+}
+
+[class~=container] #right [class~=title] #line {
+    width: .75pt;
+}
+
+[class~=container] #right header [class~=account] [class~=item-box] [class~=emprego] {
+    background-color: rgba(0, 0, 0, 0.9);
+    white-space: nowrap;
+    color: #f5d800;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 8.75pc;
+    position: absolute;
+    height: 1.075pc;
+    border-radius: 3.5pt;
+    bottom: 61%;
+    left: 25.2%;
+}
+
+[class~=container] {
+    top: 50%;
+}
+
+[class~=container] #right footer [class~=quick-actions],
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    background-color: #f5d800;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-left-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-bottom-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    padding-left: 3.75pt;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] {
+    font-size: .625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    padding-bottom: 3.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-right-width: .0625pc;
+}
+
+[class~=container] #right header [class~=title] #data {
+    top: .208333333in;
+}
+
+body {
+    padding-bottom: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-top-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    padding-right: 3.75pt;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] {
+    margin-top: .3125pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] span {
+    color: #646568;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] {
+    line-height: 7.5pt;
+}
+
+[class~=container] {
+    width: 1100px;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    padding-top: 3.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    cursor: pointer;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    transform: scale(1.05);
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions3]:hover {
+    color: #fff;
+}
+
+.container #right header .account .card-box {
+    display: inline-flex;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    position: relative;
+}
+
+[class~=container] #right header [class~=account] [class~=card] span,
+.container #right header .account .card #info,
+.container #right footer .item-extract-box .item .item-text-price,
+[class~=container] #right footer [class~=quick-actions2] {
+    position: absolute;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    position: absolute;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    position: absolute;
+}
+
+[class~=container] {
+    height: 41.5pc;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-right-style: solid;
+}
+
+body {
+    padding-right: 0;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    width: 218px;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    height: 4.375pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card] img {
+    left: 11%;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    color: #444;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    font-weight: 200;
+}
+
+.container #right footer .item-extract-box .item .item-text-price {
+    right: 0;
+}
+
+.container #right footer .item-extract-box .item .item-text-price {
+    font-size: 10.5pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-left-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    margin-top: 260px;
+}
+
+[class~=container] #left {
+    width: 75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-bottom-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right header [class~=account] [class~=card] img {
+    top: 10%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] span {
+    font-weight: 500;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    padding-left: .260416667in;
+}
+
+[class~=container] #left [class~=icones] {
+    top: 17%;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-right-color: rgba(170, 170, 170, .301);
+}
+
+* {
+    user-select: none;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-top-color: rgba(170, 170, 170, .301);
+}
+
+.container #right footer .item-extract-box .item .item-text-price {
+    text-align: right;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    opacity: 1;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    transform: scale(1);
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    opacity: 1;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    transform: scale(1);
+}
+
+[class~=container] #right header [class~=account] [class~=card] img {
+    max-height: 2.8125pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card2],
+[class~=container] #right header [class~=account] [class~=card] {
+    padding-bottom: .625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=item-text] span {
+    font-size: 9px;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    width: 100pt;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    width: 100pt;
+    height: 100pt;
+}
+
+[class~=container] #right header [class~=account] [class~=card2],
+[class~=container] #right header [class~=account] [class~=card] {
+    padding-right: .260416667in;
+}
+
+[class~=container] #right header [class~=account] [class~=card] span {
+    left: 45%;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    height: 100pt;
+}
+
+[class~=container] #right header [class~=account] [class~=card2],
+[class~=container] #right header [class~=account] [class~=card] {
+    padding-top: .625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon],
+[class~=container] #right header [class~=account] [class~=card2],
+[class~=container] #right header [class~=account] [class~=card] {
+    margin-right: 10px;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    right: 12%;
+}
+
+[class~=container] #right footer [class~=quick-actions] {
+    right: 42.5%;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    right: 73%;
+    top: 126%;
+}
+
+[class~=container] #right footer [class~=quick-actions2],
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    font-size: .75pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card],
+[class~=container] #right header [class~=account] [class~=card2] {
+    border-radius: .3rem;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    margin-top: 11.75pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card] {
+    background-image: url("https://cdn.discordapp.com/attachments/879508287198990336/953112957607350322/saldo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    background-image: url(/html/assets/images/D3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    padding-left: .15625in;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    padding-bottom: .4375pc;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    background-image: url(/html/assets/images/D1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    padding-left: .15625in;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    padding-bottom: .4375pc;
+}
+
+.container #right footer .item-extract-box .item .item-text-price {
+    line-height: .104166667in;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    padding-right: .15625in;
+}
+
+[class~=container] #right header [class~=account] [class~=card],
+[class~=container] #right header [class~=account] [class~=card2] {
+    background-size: 13.75pc .729166667in;
+}
+
+[class~=container] #right header [class~=account] [class~=card] span {
+    top: 49%;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    padding-top: .4375pc;
+}
+
+[class~=container] {
+    border-radius: .5rem;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon],
+[class~=container] #right footer {
+    display: flex;
+}
+
+body {
+    padding-top: 0;
+}
+
+[class~=container] #right footer {
+    font-size: .135416667in;
+}
+
+[class~=container] #left {
+    height: 96%;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    position: relative;
+}
+
+[class~=container] #right footer [class~=quick-actions2],
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    text-align: center;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    width: 218px;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    height: .729166667in;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    width: .3125in;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    color: #444;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    height: 1.875pc;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-radius: 7.5pt;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-radius: 7.5pt;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    font-weight: 200;
+}
+
+[class~=container] #right footer,
+[class~=container] #right header [class~=account] [class~=card2] {
+    margin-top: 10px;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    background-color: #f5d800;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    background-color: #f5d800;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-left-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-left-width: .0625pc;
+}
+
+body {
+    overflow: hidden;
+}
+
+[class~=container] {
+    border-left-width: .104166667in;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    padding-left: 25px;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-bottom-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-bottom-width: .0625pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] span,
+[class~=container] #right header [class~=account] [class~=card] span {
+    font-size: .166666667in;
+}
+
+[class~=container] #left [class~=logo] {
+    height: 75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions3],
+[class~=container] #right header [class~=account] [class~=card2] span,
+[class~=container] #right header [class~=account] [class~=title-balance] span,
+[class~=container] #right header [class~=account] [class~=card2] img {
+    position: absolute;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    align-items: center;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-right-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-top-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-right-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-top-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-radius: .4rem;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] {
+    background-image: url("https://cdn.discordapp.com/attachments/879508287198990336/953112957292802048/carteira.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] img {
+    left: 11%;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] img {
+    top: 10%;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    width: 180px;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    height: .0625pc;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] img {
+    max-height: 33.75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-right-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-right-style: solid;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] span {
+    left: 45%;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] span {
+    top: 49%;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-left-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-left-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    margin-left: 4px;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    margin-bottom: 0in;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    margin-right: 4px;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] span {
+    top: .75pt;
+}
+
+[class~=container] #right footer [class~=quick-actions] div {
+    margin-bottom: 5.25pt;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    justify-content: center;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-bottom-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-right-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-bottom-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-right-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    margin-top: 3%;
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-top-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions2] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-top-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions0] {
+    border-image: none;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] span {
+    opacity: .4;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] button:hover,
+[class~=container] #right footer [class~=quick-actions3] {
+    opacity: 1;
+}
+
+[class~=container] {
+    border-bottom-width: .104166667in;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    transform: scale(1);
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    width: 100pt;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    border-radius: .3rem;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    height: 100pt;
+}
+
+[class~=container] #right header [class~=account] [class~=line] {
+    background-color: #ebebeb;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    color: #252525;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    right: -18.76%;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    font-size: 9pt;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    margin-top: 11.75pc;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] span {
+    right: -3.75pt;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] {
+    position: relative;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] {
+    font-size: 13px;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] span,
+[class~=container] #right header [class~=account] [class~=item-box] small,
+.container #right footer .item-info-box .item-input p {
+    font-size: 10px;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    background-image: url(/html/assets/images/D4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+[class~=container] #right header [class~=account] [class~=title-balance] {
+    margin-bottom: 1.041666667in;
+}
+
+[class~=container] #right header [class~=account] [class~=item-box] h1 {
+    color: #f00;
+}
+
+[class~=container] #left,
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    display: flex;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    padding-left: .9375pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    padding-bottom: 5.25pt;
+}
+
+[class~=container] #right footer [class~=quick-actions3],
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-left-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon],
+[class~=container] #right footer [class~=quick-actions3] {
+    border-bottom-width: .0625pc;
+}
+
+.container #right footer .sacardh:hover,
+[class~=container] #right footer [class~=depositodh]:hover,
+[class~=container] #right footer [class~=transdh]:hover,
+[class~=container] #right footer [class~=multasdh]:hover {
+    transform: scale(1.15);
+    transition: 1s all ease;
+}
+
+[class~=container] #right footer [class~=depositodh]:hover,
+[class~=container] #right footer [class~=multasdh]:hover,
+[class~=container] #right footer [class~=transdh]:hover,
+.container #right footer .sacardh:hover {
+    cursor: pointer;
+}
+
+
+[class~=container] #left {
+    font-size: 15pt;
+}
+
+p {
+    margin-left: 0;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    padding-right: .9375pc;
+}
+
+.container #right footer .item-info-box .item-input p {
+    opacity: .5;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    padding-top: 5.25pt;
+}
+
+[class~=container] #right [class~=title] #line {
+    height: 10px;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon],
+[class~=container] #right footer [class~=quick-actions3] {
+    border-right-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    text-align: center;
+}
+
+[class~=container] #left {
+    color: #d4d4d4;
+}
+
+[class~=container] #right footer [class~=quick-actions3],
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    border-radius: .625pc;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    background-color: #f5d800;
+}
+
+[class~=container] #right footer [class~=quick-actions3],
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-top-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-left-style: dotted;
+}
+
+[class~=container] {
+    border-right-width: .104166667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input,
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    position: absolute;
+}
+
+[class~=container] #right header [class~=account],
+[class~=container] #right footer {
+    padding-left: 22.5pt;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-bottom-style: dotted;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    bottom: 0%;
+}
+
+[class~=container] #right footer {
+    padding-bottom: .3125in;
+}
+
+[class~=container] #left {
+    align-items: center;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-right-style: dotted;
+}
+
+[class~=container] #right header [class~=account],
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    width: 100%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    height: 100%;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-top-style: dotted;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-right-style: solid;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-left-color: #646568;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    max-height: 99%;
+}
+
+[class~=container] {
+    border-top-width: .104166667in;
+}
+
+[class~=container] #left,
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    flex-direction: column;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-left-color: rgba(170, 170, 170, .301);
+}
+
+.container #right footer .item-info-box .item-input p {
+    text-transform: uppercase;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-bottom-color: rgba(170, 170, 170, .301);
+}
+
+.container #right header .account .card #info {
+    right: 57%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    max-height: 300px;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-bottom-color: #646568;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=itens] {
+    overflow: auto;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    position: relative;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-right-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-top-color: rgba(170, 170, 170, .301);
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    width: 10.3125pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-right-color: #646568;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    height: 45px;
+}
+
+[class~=container] #right footer [class~=quick-actions3] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    width: 200px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    bottom: 5%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    height: 3.75pc;
+}
+
+[class~=container] #left [class~=logo] {
+    width: 103px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    font-family: "Poppins", sans-serif;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-top-color: #646568;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    margin-top: 20px;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] [class~=icon] {
+    border-image: none;
+}
+
+[class~=container] #right header [class~=account] {
+    padding-bottom: 10px;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    padding-bottom: .9375pc;
+}
+
+[class~=container] #right header [class~=account] {
+    padding-right: 22.5pt;
+}
+
+[class~=container] #right header [class~=account] {
+    padding-top: 10px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    outline: none;
+}
+
+[class~=container] #right footer [class~=sacardh] {
+    height: 90pt;
+}
+
+.container #right footer .item-info-box .item .valor,
+[class~=container] #center,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor2],
+[class~=container] #right footer [class~=item-info-box] [class~=item-input],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image123],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image1234],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image12345],
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh],
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    position: absolute;
+}
+
+[class~=container] #right footer [class~=sacardh] {
+    width: 90pt;
+}
+
+.container #right header .account .card #info {
+    bottom: 17%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    display: inline-flex;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image123] {
+    width: 37.125pc;
+    height: 1.354166667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image1234] {
+    top: 3.668997in;
+    width: 37.125pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image12345] {
+    top: 1.39997in;
+    width: 37.125pc;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    margin-left: 1%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    border-bottom-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item],
+[class~=container] {
+    border-bottom-style: solid;
+}
+
+[class~=container] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    margin-bottom: 1%;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    top: 27%;
+}
+
+[class~=container] #right footer [class~=depositodh],
+[class~=container] #right footer [class~=sacardh] {
+    transform: scale(1);
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    border-bottom-color: #e8e8e8;
+}
+
+.container #right header .account .card #info,
+[class~=container] #right footer [class~=item-info-box] [class~=item],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image123] {
+    font-size: 12.75pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    font-size: 13.5pt;
+}
+
+[class~=container] #right header [class~=title] #data {
+    right: .3125in;
+}
+
+[class~=container] #right footer [class~=item-extract-box] [class~=item] {
+    border-image: none;
+}
+
+[class~=container] #left {
+    justify-content: center;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    background-repeat: no-repeat;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    top: 20%;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    width: 31.25pc;
+}
+
+[class~=container] #left,
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    background-color: #bfbfbf;
+}
+
+[class~=container] #left {
+    border-radius: .8rem;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    height: 112.5pt;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+[class~=container] #right [class~=title] #line {
+    margin-left: .625pc;
+}
+
+[class~=container] {
+    border-right-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=image123],
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    border-radius: .104166667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] button:hover,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor4],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor3],
+.container #right footer .item-info-box .item .valor,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor2],
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    color: #fff;
+}
+
+[class~=container] #right footer [class~=sacardh] {
+    background-image: url(/html/assets/images/SacarWhiteIcon.png);
+}
+
+[class~=container] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=sacardh],
+[class~=container] #right footer [class~=depositodh] {
+    background-color: #f5d800;
+}
+
+[class~=container] #right footer [class~=sacardh] {
+    border-radius: 10px 7.5pt 10px 7.5pt;
+}
+
+* {
+    text-decoration: none;
+}
+
+[class~=container] #right [class~=title] #line {
+    margin-bottom: 2.25pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor2],
+.container #right footer .item-info-box .item .valor,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor4],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor3] {
+    font-size: 26px;
+}
+
+.container #right footer .item-info-box .item .valor {
+    left: 41.5%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor4],
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor3],
+.container #right footer .item-info-box .item .valor,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor2] {
+    top: 15%;
+}
+
+[class~=container] #right footer [class~=depositodh] {
+    height: 90pt;
+}
+
+[class~=container] #right footer [class~=depositodh] {
+    width: 90pt;
+}
+
+[class~=container] #right footer [class~=quick-actions2] div {
+    color: #aaa;
+}
+
+[class~=container] #right footer [class~=quick-actions0] div {
+    color: #aaa;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    padding-left: 7.5pt;
+}
+
+[class~=container] #right footer [class~=depositodh] {
+    left: 19.5%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-radius: .2rem;
+}
+
+[class~=container] #center {
+    top: 0;
+}
+
+p {
+    margin-right: 0;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] {
+    line-height: .9375pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor2] {
+    left: 48%;
+}
+
+[class~=container] #right footer [class~=quick-actions2] div {
+    margin-bottom: .072916667in;
+}
+
+[class~=container] #right footer [class~=quick-actions0] div {
+    margin-bottom: .072916667in;
+}
+
+[class~=container] #right footer [class~=depositodh] {
+    background-image: url(/html/assets/images/DepositoWhiteIcon.png);
+}
+
+[class~=container] #right [class~=title] #line {
+    margin-right: .625pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor3],
+.container #right footer .item-info-box .mymultas,
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor4],
+[class~=container] #right footer [class~=multasdh] {
+    position: absolute;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor3] {
+    left: 61.5%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-left-width: .25pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] {
+    padding-left: 49%;
+}
+
+[class~=container] #right header [class~=title] #data {
+    opacity: .3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] {
+    margin-top: 41.25pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-bottom-width: .25pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-right-width: .25pc;
+}
+
+.container #right footer .item-info-box .mymultas {
+    top: 100%;
+    padding-top: 6px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-top-width: .25pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=multasdh],
+[class~=container] #right footer [class~=depositodh] {
+    border-radius: .625pc .104166667in 7.5pt 7.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-right-style: solid;
+}
+
+[class~=container] #right [class~=title] #line {
+    margin-top: 2.25pt;
+}
+
+[class~=container] #right footer [class~=transdh],
+[class~=container] #right footer [class~=multasdh] {
+    height: 90pt;
+}
+
+[class~=container] #right footer [class~=multasdh],
+[class~=container] #right footer [class~=transdh] {
+    width: 90pt;
+}
+
+.container #right footer .item-info-box .mymultas {
+    left: 0%;
+}
+
+[class~=container] #right footer [class~=multasdh] {
+    margin-left: 1%;
+}
+
+[class~=container] #right footer [class~=multasdh] {
+    margin-bottom: 1%;
+}
+
+[class~=container] #right footer [class~=multasdh] {
+    top: 27%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-top-style: solid;
+}
+
+.container #right footer .item-info-box .mymultas {
+    margin-top: 18.75pt;
+}
+
+p {
+    margin-top: 0;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-left-color: #f3f3f3;
+}
+
+.container #right footer .item-info-box .mymultas {
+    font-size: .28125in;
+}
+
+.container #right footer .item-info-box .mymultas {
+    width: 31.25pc;
+}
+
+[class~=container] #right footer [class~=multasdh] {
+    left: 36%;
+}
+
+.container #right footer .item-info-box .mymultas {
+    height: 1.554167in;
+}
+
+[class~=container] {
+    border-left-color: #323232;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] [class~=valor4] {
+    left: 38.5%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] button:hover {
+    background-color: #313131;
+}
+
+[class~=container] {
+    border-bottom-color: #323232;
+}
+
+[class~=container] {
+    border-right-color: #323232;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container #right footer .item-info-box .mymultas {
+    background-color: #fff;
+}
+
+.container #right footer .item-info-box .mymultas,
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    color: #000;
+}
+
+[class~=container] #right footer [class~=transdh],
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas],
+[class~=container] #right footer [class~=multasdh] {
+    transform: scale(1);
+}
+
+[class~=container] #right footer [class~=transdh],
+[class~=container] #right footer [class~=multasdh] {
+    background-repeat: no-repeat;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-bottom-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=transdh],
+[class~=container] #right footer [class~=multasdh] {
+    background-size: .833333333in .833333333in;
+}
+
+.container #right footer .item-info-box .mymultas {
+    line-height: 15px;
+}
+
+.container #right footer .item-info-box .mymultas {
+    border-radius: .104166667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    bottom: 0%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    margin-top: 11.25pt;
+}
+
+[class~=container] #right footer [class~=multasdh] {
+    background-image: url(/html/assets/images/DebitosWhiteIcon.png);
+}
+
+[class~=container] {
+    border-top-color: #323232;
+}
+
+[class~=container] #right footer [class~=transdh],
+[class~=container] #right footer [class~=multasdh] {
+    background-color: #f5d800;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    width: 137.75pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas],
+[class~=container] #right footer [class~=transdh],
+.container #right footer .item-info-box .item-input button,
+[class~=container] #left [class~=logo] {
+    position: absolute;
+}
+
+[class~=container] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-right-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    height: 1.8125pc;
+}
+
+[class~=container] #left [class~=logo] {
+    margin-left: .9%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    top: 0;
+}
+
+p {
+    padding-left: 0;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    left: 70.1%;
+}
+
+[class~=container] #center {
+    right: 0;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    width: 150px;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    margin-left: 1%;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    margin-bottom: 1%;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    top: 27%;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    left: 52%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    height: 150px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    font-family: "Poppins", sans-serif;
+}
+
+[class~=container] #center {
+    width: 85%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    font-size: .177083333in;
+}
+
+[class~=container] #center {
+    height: 100%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    outline: none;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-top-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    background-image: url(/html/assets/images/TransWhiteIcon.png);
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] input {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=transdh] {
+    border-radius: 7.5pt .625pc .104166667in 10px;
+}
+
+[class~=container] #right [class~=title] #line {
+    background-color: #aaa;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-color: transparent;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    position: relative;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-image: url("https://cdn.discordapp.com/attachments/536772140721111049/712107724493553695/1642096.png");
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-repeat: no-repeat;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    font-size: 18px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    padding-left: 10px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-size: 112.5pt 1.5625in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-position-y: 30pt;
+}
+
+.container #right footer .item-info-box .item-input button,
+[class~=container] #right footer [class~=item-info-box] [class~=indicador] {
+    color: #000;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    background-position-x: 2.5pc;
+}
+
+.container #right footer .item-info-box .item-input button {
+    font-weight: bold;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    width: 570px;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    height: .625in;
+}
+
+.container #right footer .item-info-box .item-input button {
+    margin-left: 60px;
+    margin-top: 2.175pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas],
+[class~=container] #right footer [class~=item-info-box] [class~=indicador] {
+    line-height: .9375pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador],
+[class~=container] #right footer [class~=item-info-box] [class~=iconemultas] {
+    border-radius: .625pc;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    margin-top: .208333333in;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    padding-bottom: 11.25pt;
+}
+
+* {
+    transition: all .1s;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    display: inline-flex;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador] {
+    margin-top: 24.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador],
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2] {
+    left: 3%;
+}
+
+.container #right footer .item-info-box .item-input button {
+    opacity: 1;
+}
+
+.container #right footer .item-info-box .indicador3,
+[class~=container] #right footer [class~=item-extract-box],
+[class~=desctitle],
+[class~=container] #right footer [class~=item-info-box] [class~=indicador],
+[class~=container] #right footer [class~=line],
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2],
+[class~=container] #right header [class~=account] [class~=card2] #info,
+[class~=container] #right {
+    position: absolute;
+}
+
+[class~=container] #center {
+    padding-right: .3125in;
+}
+
+[class~=container] #right footer {
+    padding-right: 22.5pt;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    border-bottom-width: .0625pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador] {
+    font-size: 27px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    background-color: #fff;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-left-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount],
+[class~=container] #right footer [class~=extrato] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-bottom-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    border-bottom-color: #e8e8e8;
+}
+
+[class~=container] #right footer [class~=extrato] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=line] {
+    width: 300pt;
+}
+
+[class~=container] {
+    background-color: #323232;
+}
+
+[class~=container] #right footer [class~=line] {
+    height: .125pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2] {
+    margin-top: 3.8625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box],
+[class~=container] #left [class~=logo] {
+    margin-bottom: 1%;
+}
+
+[class~=container] #right footer [class~=line] {
+    top: 18%;
+}
+
+[class~=container] #right footer [class~=line],
+[class~=container] #right footer [class~=item-info-box] {
+    border-radius: .4rem;
+}
+
+.container #right footer .item-info-box .item-input button {
+    outline: none;
+}
+
+[class~=container] #right footer [class~=line] {
+    background-color: rgba(231, 231, 231, .842);
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    width: 352.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    height: 100%;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    display: flex;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2] {
+    align-items: flex-end;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-right-width: .041666667in;
+}
+
+.container #right footer .quick-actions3 div {
+    color: #aaa;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-top-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    padding-left: 0px;
+}
+
+.container #right footer .item-info-box .item-input button {
+    font-size: 12px;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] #info {
+    right: 57%;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    padding-bottom: .208333333in;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    padding-right: 0px;
+}
+
+.container #right footer .item-info-box .item-input button {
+    padding-left: .625pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    padding-top: .208333333in;
+}
+
+[class~=container] #right footer [class~=item-info-box] {
+    margin-top: 7.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    height: 127.5pt;
+}
+
+.container #right footer .item-info-box .item-input button {
+    padding-bottom: .052083333in;
+}
+
+.container #right footer .quick-actions3 div {
+    margin-bottom: .072916667in;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    width: 570px;
+}
+
+.container #right footer .item-info-box .item-input button {
+    padding-right: .625pc;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    margin-left: 1%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-right-style: solid;
+}
+
+[class~=container] {
+    transform: translate(-50%, -50%);
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-top-style: solid;
+}
+
+.container #right footer .item-info-box .item-input button {
+    padding-top: .052083333in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2],
+.container #right footer .item-info-box .indicador3 {
+    color: #000;
+}
+
+.container #right footer .item-info-box .item-input button,
+[class~=container] #right header [class~=title] #data {
+    text-transform: uppercase;
+}
+
+[class~=container] #right footer [class~=item-extract-box],
+.container #right footer .item-info-box .item-input button {
+    background-color: #fff;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    top: 60%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    left: 3%;
+}
+
+[class~=container] #right footer {
+    padding-top: .3125in;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    transform: scale(1);
+}
+
+p {
+    padding-bottom: 0;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-radius: .5rem;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-left-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2],
+.container #right footer .item-info-box .indicador3 {
+    font-size: 27px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance],
+.container #right footer .item-info-box .indicador3,
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2] {
+    line-height: 15px;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    background-repeat: no-repeat;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance],
+[class~=container] #right footer [class~=item-info-box] [class~=indicador2],
+.container #right footer .item-info-box .indicador3 {
+    border-radius: 7.5pt;
+}
+
+[class~=container] #left [class~=logo] {
+    top: 0%;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    background-size: 80px 80px;
+}
+
+[class~=desctitle] {
+    color: #727272;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    background-position-x: .104166667in;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    background-position-y: 10px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer],
+.container #right footer .item-info-box .item-input button {
+    font-family: "Poppins", sans-serif;
+}
+
+.container #right footer .item-info-box .indicador3 {
+    margin-top: 5.4375pc;
+}
+
+[class~=desctitle] {
+    font-size: 16px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-bottom-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-right-color: #f3f3f3;
+}
+
+.container #right footer .item-info-box .indicador3 {
+    left: 3.2%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-top-color: #f3f3f3;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-left-width: .010416667in;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] #info {
+    bottom: 17%;
+}
+
+[class~=container] #right header [class~=account] [class~=card2] #info {
+    font-size: 12.75pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=amount] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=item-extract-box] {
+    border-radius: 10px 10px 7.5pt 10px;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-bottom-width: .010416667in;
+}
+
+[class~=container] #right {
+    top: 0;
+}
+
+[class~=container] #right footer [class~=quick] {
+    font-size: 20px;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-right-width: .010416667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    width: 1.641667in;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-top-width: .010416667in;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-left-style: solid;
+}
+
+.dashboardtitle2,
+[class~=container] #right footer [class~=quick],
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance],
+[class~=olatitle] {
+    position: absolute;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance] {
+    margin-top: 3.8625pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    height: 30px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    top: 14%;
+}
+
+[class~=container] #right footer [class~=quick] {
+    margin-top: 113.75pt;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-right-style: solid;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    left: 40%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance] {
+    left: 10.5%;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-left-color: rgba(0, 0, 0, 0);
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance] {
+    font-size: 18pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=multasbalance] {
+    color: #ff2323;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    outline: none;
+}
+
+[class~=container] #right {
+    right: 0;
+}
+
+[class~=container] #right {
+    width: 85%;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-right-color: rgba(0, 0, 0, 0);
+}
+
+p {
+    padding-right: 0;
+}
+
+[class~=desctitle] {
+    top: 12%;
+}
+
+[class~=container] #right {
+    height: 100%;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-top-color: rgba(0, 0, 0, 0);
+}
+
+[class~=container] #right {
+    padding-right: 22.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    font-size: 18px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    color: #f5d800;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    width: 100%;
+}
+
+p {
+    padding-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    margin-left: 47.25pt;
+}
+
+[class~=container] #right {
+    color: #fff;
+}
+
+[class~=olatitle] {
+    font-size: 1.75pc;
+}
+
+.container #right footer .item-info-box .item-input button {
+    border-image: none;
+}
+
+[class~=olatitle] {
+    top: 4%;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    padding-left: 7.5pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-radius: .2rem;
+}
+
+.container #right footer .item-info-box .item-input button {
+    transition: .2s;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] label {
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 22.5pt;
+}
+
+[class~=dashboardtitle],
+.dashboardtitle2 {
+    font-size: 22px;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    background-color: #fff;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] label {
+    font-size: .625pc;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] label {
+    color: #c1c5cd;
+}
+
+[class~=container] #left [class~=logo] {
+    background-image: url("https://cdn.discordapp.com/attachments/879508287198990336/953112894269165648/logo.png");
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    height: .010416667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-left-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-bottom-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-right-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    margin-left: 0pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-top-width: .041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-left-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] button:hover {
+    cursor: pointer;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-bottom-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-right-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-top-style: solid;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-left-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-bottom-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-right-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-top-color: #f3f3f3;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=toPlayer] {
+    border-image: none;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=botaodepo] {
+    margin-left: 36.75pt;
+    margin-top: 26pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item-input] [class~=botaotrans] {
+    margin-left: .38in;
+}
+
+.dashboardtitle2 {
+    margin-top: 15%;
+}
+
+[class~=container] #left [class~=logo] {
+    background-color: #f5d800;
+}
+
+[class~=container] #left [class~=logo] {
+    background-size: 1.041666667in 1.041666667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    margin-bottom: .104166667in;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    margin-right: 0pt;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #666;
+}
+
+[class~=container] #left [class~=logo] {
+    border-radius: .625pc .625pc 0pt 0pt;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    margin-top: .104166667in;
+}
+
+[class~=container] #left [class~=icon] {
+    transform: scale(1.5);
+    width: 66px;
+    margin-top: 8pt;
+    max-height: 4.25pc;
+}
+
+.active {
+    background-color: #fff;
+    border-left: 1px solid #f5d800;
+}
+
+[class~=container] #right footer [class~=item-info-box] [class~=item] #line {
+    background-color: rgba(170, 170, 170, .651);
+}
