@@ -6,6 +6,14 @@ ConfigClient = {
     ip = "http://127.0.0.1/inventario", -- caso use ip por xammp bote o caminho assim http://ip/caminho e tire as iamgens do fx_manifest
     percentual = 0.85, -- Percentual para venda de itens nesse caso padrão está para 85% do valor do item
     tecla = 'oem_3', -- tecla que abrirá o inventario padrão é o aspas
+    disableIncludedShop = true,
+    disableIncludedTrunk = true,
+
+    separatedShop = true,
+    separatedTrunk = true,
+
+    keybindTrunk = "PAGEUP",
+
     blackItemList = {
         trunckchest = {
             "identidade",
@@ -572,27 +580,77 @@ local marcacoes = {
     
 }
 
+-- Citizen.CreateThread(function()
+-- 	while true do
+-- 	local idle = 1000
+-- 		if not menuactive then 
+-- 			local ped = PlayerPedId()
+-- 			local pCords = GetEntityCoords(ped)
+-- 			for i = 1,#marcacoes do 
+-- 				local distance = #(pCords - marcacoes[i])
+-- 				if distance < 10 then 
+-- 					idle = 3
+-- 					if distance < 2.0 then 
+-- 						DrawText3Ds(marcacoes[i].x,marcacoes[i].y,marcacoes[i].z +1.25,"~p~APERTE~w~ ~g~[']~w~ | Acessar a Loja")
+-- 						if IsControlJustPressed(0,9999) then
+-- 							ToggleActionMenu()
+-- 						end
+-- 					end
+-- 				end
+-- 			end 
+-- 		end
+-- 		Wait(idle)
+-- 	end
+-- end)
+
+local promptLojaId = "dp_inventory_shop_prompt"
+
 Citizen.CreateThread(function()
-	while true do
-	local idle = 1000
-		if not menuactive then 
-			local ped = PlayerPedId()
-			local pCords = GetEntityCoords(ped)
-			for i = 1,#marcacoes do 
-				local distance = #(pCords - marcacoes[i])
-				if distance < 10 then 
-					idle = 3
-					if distance < 2.0 then 
-						DrawText3Ds(marcacoes[i].x,marcacoes[i].y,marcacoes[i].z +1.25,"~p~APERTE~w~ ~g~[']~w~ | Acessar a Loja")
-						if IsControlJustPressed(0,9999) then
-							ToggleActionMenu()
-						end
-					end
-				end
-			end 
-		end
-		Wait(idle)
-	end
+    while true do
+        local idle = 1000
+        local showingPrompt = false
+
+        if not menuactive then
+            local ped = PlayerPedId()
+            local pCords = GetEntityCoords(ped)
+
+            for i = 1, #marcacoes do
+                local distance = #(pCords - marcacoes[i])
+
+                if distance < 10.0 then
+                    idle = 3
+
+                    if distance < 2.0 then
+                        showingPrompt = true
+
+                        exports["ghost_ui"]:ShowPrompt({
+                            id = promptLojaId,
+                            coords = vector3(marcacoes[i].x, marcacoes[i].y, marcacoes[i].z + 1.25),
+                            key = "E",
+                            text = "Acessar a Loja",
+                            type = "default",
+                            maxDistance = 2.0,
+                            offset = 0.0,
+                            priority = 10,
+                            active = true
+                        })
+
+                        if IsControlJustPressed(0, 38) then -- E
+                            ToggleActionMenu()
+                        end
+
+                        break
+                    end
+                end
+            end
+        end
+
+        if not showingPrompt then
+            exports["ghost_ui"]:HidePrompt(promptLojaId)
+        end
+
+        Wait(idle)
+    end
 end)
 
 function DrawText3Ds(x,y,z,text)
