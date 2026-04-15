@@ -596,16 +596,15 @@ function dPN.buySlot()
     local source = source
     local user_id = vRP.getUserId(source)
     if user_id then
-        local slots = getIdentitySlot(user_id).slots
-        local slot3 = ConfigServer['slots'] - slots
-        if tonumber(slot3) > 0 then
+        local identity = getIdentitySlot(user_id)
+        if not identity then return end
+
+        local slots = tonumber(identity.slots) or 15
+        local faltam = (tonumber(ConfigServer['slots']) or 0) - slots
+
+        if faltam > 0 then
             if tryFullPayment(user_id, ConfigServer['priceSlot']) then
-                if not ConfigServer['creative2'] then
-                    vRP.execute('buySlotInventory', {
-                        user_id = user_id,
-                        slots = slots + 1
-                    })
-                elseif ConfigServer['creative2'] == true then
+                if ConfigServer['creative2'] == true then
                     vRP.execute('buySlotInventoryCreative', {
                         user_id = user_id,
                         slots = slots + 1
@@ -617,10 +616,6 @@ function dPN.buySlot()
                     })
                 end
 
-                vRP.execute('buySlotInventory', {
-                    user_id = user_id,
-                    slots = slots + 1
-                })
                 dPNclient.updateInventory(source)
             end
         end

@@ -1,21 +1,34 @@
 
-function formaDeTirarDinheiro(user_id,amount)
-    if vRP.tryFullPayment(user_id,amount) then
-        return true
-    elseif vRP.tryPayment(user_id,amount) then
-        return true
-    else
-        return false
-    end
-end -- sua função de tirar o dinheiro
+function formaDeTirarDinheiro(user_id, amount)
+    amount = parseInt(amount) or 0
+    if amount <= 0 then return false end
 
-function formDeDarDinheiro(user_id,amount)
-    vRP.giveMoney(user_id,amount)
-end -- sua função de tirar o dinheiro
+    -- dinheiro físico como item
+    if vRP.getInventoryItemAmount(user_id, "dinheiro") >= amount then
+        vRP.tryGetInventoryItem(user_id, "dinheiro", amount, true)
+        return true
+    end
+
+    -- opcional: usa banco como fallback
+    if vRP.tryPayment(user_id, amount) then
+        return true
+    end
+
+    return false
+end
+
+function formDeDarDinheiro(user_id, amount)
+    amount = parseInt(amount) or 0
+    if amount <= 0 then return end
+
+    -- devolve como item físico
+    vRP.giveInventoryItem(user_id, "dinheiro", amount, true)
+end
 
 function getMoney(user_id)
-    return vRP.getMoney(user_id)
-end -- sua função de pegar o dinheiro
+    -- mostra o dinheiro físico do inventário
+    return vRP.getInventoryItemAmount(user_id, "dinheiro")
+end
 
 function hasPermission(user_id,perm)
     return vRP.hasPermission(user_id,perm)
