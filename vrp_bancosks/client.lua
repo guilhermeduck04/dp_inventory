@@ -23,23 +23,6 @@ local banks = {
   {name="Banco", id=108, x=237.44, y=217.82, z=106.28},
   {name="Banco", id=108,  x = -1040.44, y = -2845.98, z = 27.72},
 
-  local function nearBanco(maxDistance)
-    local ped = PlayerPedId()
-    local coords = GetEntityCoords(ped)
-    maxDistance = maxDistance or 2.0
-
-    for _, v in pairs(banks) do
-        local bankVec = vector3(v.x, v.y, v.z)
-        local dist = #(coords - bankVec)
-
-        if dist <= maxDistance then
-            return true, bankVec, dist
-        end
-    end
-
-    return false, nil, nil
-end
-
 
 --[[   {name="ATM", id=277, x=-386.733, y=6045.953, z=31.501},
   {name="ATM", id=277, x=-283.23, y=6226.21, z=31.5},
@@ -131,7 +114,22 @@ end
    {name="ATM", id=277, x=1493.14, y=-2278.67, z=72.18}, ]]
 } 
 
+  local function nearBanco(maxDistance)
+    local ped = PlayerPedId()
+    local coords = GetEntityCoords(ped)
+    maxDistance = maxDistance or 2.0
 
+    for _, v in pairs(banks) do
+        local bankVec = vector3(v.x, v.y, v.z)
+        local dist = #(coords - bankVec)
+
+        if dist <= maxDistance then
+            return true, bankVec, dist
+        end
+    end
+
+    return false, nil, nil
+end
 
 function CalculateTimeToDisplay()
 	hora = GetClockHours()
@@ -205,44 +203,32 @@ CreateThread(function()
         local sleep = 1000
         local ped = PlayerPedId()
 
-        if not IsPedInAnyVehicle(ped) then
-            local coords = GetEntityCoords(ped)
+        if not IsPedInAnyVehicle(ped, false) then
+            local isNearBank, bankCoord = nearBanco(2.0)
 
-            for _, j in pairs(banks) do
-                local bankVec = vector3(j.x, j.y, j.z)
-                local dist = #(coords - bankVec)
+            if isNearBank and bankCoord then
+                sleep = 0
 
-                if dist <= 2.0 then
-                    sleep = 0
+                exports["ghost_ui"]:ShowPrompt({
+                    id = bankPromptId,
+                    coords = bankCoord,
+                    key = "E",
+                    text = "Abrir banco",
+                    offset = 0.45,
+                    maxDistance = 2.0,
+                    priority = 10,
+                    active = true
+                })
 
-                    exports["ghost_ui"]:ShowPrompt({
-                        id = bankPromptId,
-                        coords = bankVec,
-                        key = "E",
-                        text = "Abrir banco",
-                        offset = 0.6,
-                        maxDistance = 2.0,
-                        priority = 10,
-                        active = true
-                    })
-
-                    -- ABRIR BANCO
-                    if IsControlJustPressed(0, 38) then -- E
-                        SetNuiFocus(true, true)
-                        SendNUIMessage({ action = "showMenu" })
-                    end
-
-                    -- CARTÃO (tecla G)
-                    if IsControlJustPressed(0, 47) then -- G
-                        TriggerServerEvent("bank:requestCard") -- ajusta se tiver outro nome
-                    end
-
-                    break
+                if IsControlJustPressed(0, 38) then
+                    SetNuiFocus(true, true)
+                    SendNUIMessage({ action = "showMenu" })
                 end
+
+                break
             end
         end
 
-        -- ESCONDE SE NÃO ESTIVER PERTO
         if sleep == 1000 then
             exports["ghost_ui"]:HidePrompt(bankPromptId)
         end
@@ -250,7 +236,6 @@ CreateThread(function()
         Wait(sleep)
     end
 end)
-
 
 
 

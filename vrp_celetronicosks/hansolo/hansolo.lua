@@ -180,13 +180,25 @@ local atms = {
 
 }
 
-function nearBanco()
+local bankCoords = {
+    vector3(150.266, -1040.203, 29.374),
+    vector3(-1212.980, -330.841, 37.787),
+    vector3(-2962.582, 482.627, 15.703),
+    vector3(-112.202, 6469.295, 31.626),
+    vector3(314.187, -278.621, 54.170),
+    vector3(-351.534, -49.529, 49.042),
+    vector3(237.44, 217.82, 106.28),
+    vector3(-1040.44, -2845.98, 27.72)
+}
+
+local function nearBancoHansolo(maxDistance)
     local ped = PlayerPedId()
     local coords = GetEntityCoords(ped)
+    maxDistance = maxDistance or 2.0
 
-    for _, v in pairs(banks) do
-        local dist = #(coords - vector3(v.x, v.y, v.z))
-        if dist <= 2.0 then
+    for _, v in pairs(bankCoords) do
+        local dist = #(coords - v)
+        if dist <= maxDistance then
             return true, v, dist
         end
     end
@@ -255,11 +267,14 @@ AddEventHandler('currentbalance2', function()
 end)
 
 RegisterNUICallback('depositar', function(data)
-    local isNearBank, bankCoord, bankDistance = nearBanco()
+    local isNearBank = nearBancoHansolo(2.0)
+    local amount = tonumber(data.amount)
 
     if isNearBank then
-        TriggerServerEvent('banco:depositar', tonumber(data.amount))
-        TriggerServerEvent('banco:balance')
+        if amount and amount > 0 then
+            TriggerServerEvent('banco:depositar', amount)
+            TriggerServerEvent('banco:balance')
+        end
     else
         TriggerEvent("Notify","negado","Depósitos só podem ser feitos em agências bancárias.")
     end
