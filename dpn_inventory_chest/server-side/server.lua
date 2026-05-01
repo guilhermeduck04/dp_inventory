@@ -59,6 +59,23 @@ local truePesoInventory = {}
 local chestTrue = {}
 local slotsVerify = {}
 
+local function normalizeWeaponItemName(item)
+    if not item then return nil end
+
+    if item:find("^WEAPON_") then
+        return item
+    end
+
+    return item:gsub("^wbody|", "")
+end
+
+local function getAmmoItemNameFromWeapon(weapon)
+    if not weapon then return nil end
+
+    local normalizedWeapon = normalizeWeaponItemName(weapon)
+    return normalizedWeapon:gsub("^WEAPON_", "AMMO_")
+end
+
 function SendWebhookMessage(webhook, message)
     if webhook ~= nil and webhook ~= "" then
         PerformHttpRequest(webhook, function(err, text, headers)
@@ -237,7 +254,7 @@ function dPN.getInventoryPlayer()
                 if k and v.amount > 0 then
 
                     if dPN.retrieveType(v.item) == "equipar" then
-                        local weaponNoWbody = v.item:gsub("wbody|", "")
+                        local weaponNoWbody = normalizeWeaponItemName(v.item)
 
                         local cadencia, precisao, recoil, hudCapacity = dPNclient.getWeaponStatus(source, weaponNoWbody)
                         local dano = dPNclient.getDamagedWeapon(source, weaponNoWbody)
@@ -802,7 +819,7 @@ function dPN.getTableItemChest(tableItens, bau)
 
                 if inTable(v.item) and v.amount > 0 and v.item ~= "" then
                     if dPN.retrieveType(v.item) == "equipar" then
-                        local weaponNoWbody = v.item:gsub("wbody|", "")
+                        local weaponNoWbody = normalizeWeaponItemName(v.item)
 
                         local cadencia, precisao, recoil, hudCapacity = dPNclient.getWeaponStatus(source, weaponNoWbody)
                         local dano = dPNclient.getDamagedWeapon(source, weaponNoWbody)
@@ -1158,7 +1175,7 @@ function dPN.getItemTurnkChest(carTable)
 
                             if inTable(v.item) and v.amount > 0 then
                                 if dPN.retrieveType(v.item) == "equipar" then
-                                    local weaponNoWbody = v.item:gsub("wbody|", "")
+                                    local weaponNoWbody = normalizeWeaponItemName(v.item)
                                     local cadencia, precisao, recoil, hudCapacity =
                                         dPNclient.getWeaponStatus(source, weaponNoWbody)
                                     local dano = dPNclient.getDamagedWeapon(source, weaponNoWbody)
@@ -1519,7 +1536,7 @@ function dPN.getItemHouses(nameHouse)
 
                         if inTable(v.item) and v.amount > 0 then
                             if dPN.retrieveType(v.item) == "equipar" then
-                                local weaponNoWbody = v.item:gsub("wbody|", "")
+                                local weaponNoWbody = normalizeWeaponItemName(v.item)
 
                                 local cadencia, precisao, recoil, hudCapacity =
                                     dPNclient.getWeaponStatus(source, weaponNoWbody)
@@ -1838,31 +1855,36 @@ end
 
 function dPN.useKeyBindItem(tecla, weaponsTrue)
     local source = source
-    if vRPclient.getHealth(source) <= 101 then
-        return
-    end
+    if vRPclient.getHealth(source) <= 101 then return end
 
     local user_id = vRP.getUserId(source)
     local inventory = getPlayerInventory(user_id)
+
     if inventory then
         local tableKeyBind = inventory[tostring(tecla)]
+
         if tableKeyBind then
             local item = tableKeyBind.item
             local amount = tableKeyBind.amount
             local type = dPN.retrieveType(item)
+
             if type == "usar" then
                 itensUse(source, user_id, item, amount, type, tostring(tecla))
+
             elseif type == "equipar" then
                 if weaponsTrue == true then
-                    local arma = item:gsub("wbody|", "")
-                    local ammoWeapon = vRP.getInventoryItemAmount(user_id, "wammo|" .. arma)
+                    local arma = normalizeWeaponItemName(item)
+                    local ammoItem = getAmmoItemNameFromWeapon(arma)
+                    local ammoWeapon = vRP.getInventoryItemAmount(user_id, ammoItem) or 0
+
                     dPNclient.puxWeapon(source, arma, ammoWeapon)
-                end -- � para s� puxar a arma
+                end
+
             elseif type == "recarregar" then
                 if weaponsTrue == true then
                     local ammoWeapon = vRP.getInventoryItemAmount(user_id, item)
                     dPNclient.rechargeAmmo(source, item, ammoWeapon)
-                end -- � para s� para recarregar
+                end
             end
         end
     end
@@ -1881,11 +1903,24 @@ end
 function dPN.giveAmmo(weapon, ammoatual)
     local source = source
     local user_id = vRP.getUserId(source)
+
     if user_id then
-        vRP.giveInventoryItem(user_id, "wammo|" .. weapon, ammoatual)
+        local ammoItem = getAmmoItemNameFromWeapon(weapon)
+
+        if ammoItem and parseInt(ammoatual) > 0 then
+            vRP.giveInventoryItem(user_id, ammoItem, parseInt(ammoatual))
+        end
     end
 end
 
+function dPN.getAmmoAmount(item)
+    local source = source
+    local user_id = vRP.getUserId(source)
+    if user_id then
+        return vRP.getInventoryItemAmount(user_id, item) or 0
+    end
+    return 0
+end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- SKILLBAR
 -----------------------------------------------------------------------------------------------------------------------------------------

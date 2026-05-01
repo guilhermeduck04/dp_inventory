@@ -29,6 +29,23 @@ local cfgPlacaClonada = ConfigClient['placaClonada'] or "CLONADA"
 
 local cfgkeyBindWeapon = ConfigClient['keyBindWeapon'] or false
 
+local function normalizeWeaponItemName(item)
+    if not item then return nil end
+
+    if item:find("^WEAPON_") then
+        return item
+    end
+
+    return item:gsub("^wbody|", "")
+end
+
+local function getAmmoItemNameFromWeapon(weapon)
+    if not weapon then return nil end
+
+    local normalizedWeapon = normalizeWeaponItemName(weapon)
+    return normalizedWeapon:gsub("^WEAPON_", "AMMO_")
+end
+
 Citizen.CreateThread(function()
     SetNuiFocus(false, false)
     SetCursorLocation(0.5, 0.5)
@@ -92,10 +109,14 @@ end
 
 function dPN.puxWeapon(weapon, ammo)
     local ped = PlayerPedId()
-    if weaponInHand == nil then -- Nenhuma arma na m�o
-        local maxAmmo = GetMaxAmmoInClip(ped, GetHashKey(weapon))
+    weapon = normalizeWeaponItemName(weapon)
+
+    if weaponInHand == nil then
+        local _, maxAmmo = GetMaxAmmo(ped, GetHashKey(weapon))
+        local ammoItem = getAmmoItemNameFromWeapon(weapon)
+
         if parseInt(ammo) < parseInt(maxAmmo) then
-            if dPNserver.removeAmmo("wammo|" .. weapon, ammo) then
+            if dPNserver.removeAmmo(ammoItem, ammo) then
                 GiveWeaponToPed(ped, GetHashKey(weapon), ammo, false, false)
                 SetCurrentPedWeapon(ped, GetHashKey(weapon), true)
             else
@@ -103,20 +124,19 @@ function dPN.puxWeapon(weapon, ammo)
                 SetCurrentPedWeapon(ped, GetHashKey(weapon), true)
             end
         elseif parseInt(ammo) >= parseInt(maxAmmo) then
-            if dPNserver.removeAmmo("wammo|" .. weapon, maxAmmo) then
+            if dPNserver.removeAmmo(ammoItem, maxAmmo) then
                 GiveWeaponToPed(ped, GetHashKey(weapon), maxAmmo, false, false)
                 SetCurrentPedWeapon(ped, GetHashKey(weapon), true)
             end
         end
-        weaponInHand = weapon
 
-    else -- Ter arma na m�o
+        weaponInHand = weapon
+    else
         local ammoatual = GetAmmoInPedWeapon(ped, GetHashKey(weapon))
         SetPedAmmo(ped, GetHashKey(weapon), 0)
         RemoveWeaponFromPed(ped, GetHashKey(weapon))
         dPNserver.giveAmmo(weapon, ammoatual)
         RemoveAllPedWeapons(ped, true)
-
         weaponInHand = nil
     end
 end
@@ -143,6 +163,57 @@ function dPN.rechargeAmmo(item, ammoWeapon)
 
     end
 end
+
+
+
+local autoReloadBusy = false
+
+CreateThread(function()
+    while true do
+        Wait(0)
+
+        if cfgkeyBindWeapon then
+            -- Impede o GTA de trocar de arma automaticamente quando zerar
+            SetWeaponsNoAutoswap(true)
+        else
+            Wait(500)
+        end
+    end
+end)
+
+CreateThread(function()
+    while true do
+        Wait(50)
+
+        if cfgkeyBindWeapon and weaponInHand and not autoReloadBusy then
+            local ped = PlayerPedId()
+            local weaponHash = GetHashKey(weaponInHand)
+            local selectedWeapon = GetSelectedPedWeapon(ped)
+            local ammoInWeapon = GetAmmoInPedWeapon(ped, weaponHash)
+
+            -- Se a arma em mão zerou, tenta manter ela selecionada e recarregar
+            if ammoInWeapon <= 0 then
+                local ammoItem = "wammo|" .. weaponInHand
+                local ammoAmount = dPNserver.getAmmoAmount(ammoItem)
+
+                if ammoAmount and ammoAmount > 0 then
+                    autoReloadBusy = true
+
+                    -- Se o GTA trocou de arma, força voltar para a arma em mão
+                    if selectedWeapon ~= weaponHash then
+                        SetCurrentPedWeapon(ped, weaponHash, true)
+                        Wait(100)
+                    end
+
+                    dPN.rechargeAmmo(ammoItem, ammoAmount)
+
+                    Wait(900)
+                    autoReloadBusy = false
+                end
+            end
+        end
+    end
+end)
 
 RegisterNetEvent('dope:nuis:abririnventario')
 AddEventHandler('dope:nuis:abririnventario', function(cds, casanome)
@@ -846,35 +917,47 @@ RegisterNUICallback("buySlot", function(cb)
     dPNserver.buySlot()
 end)
 
-RegisterNUICallback("closeInventory", function(cb)
+local function closeInventoryUi()
     SetNuiFocus(false, false)
-    SendNUIMessage({
-        action = "closeInventory"
-    })
+    SendNUIMessage({ action = "closeInventory" })
     StopScreenEffect("MenuMGSelectionIn")
     --TransitionFromBlurred(1000)
+
     cantOpen = true
     Wait(1000)
     cantOpen = false
+
     dPNserver.closeInventory(tableCar.vnetid, chestOpenReturn)
     chestOpenReturn = nil
+
     TriggerEvent('nation_hud:updateHud', true)
+end
+
+RegisterNUICallback("closeInventory", function(data, cb)
+    closeInventoryUi()
+    if cb then cb("ok") end
 end)
 
 function dPN.closeInventoryPlayer()
-    SetNuiFocus(false, false)
-    SendNUIMessage({
-        action = "closeInventory"
-    })
-    StopScreenEffect("MenuMGSelectionIn")
-    --TransitionFromBlurred(1000)
-    dPNserver.closeInventory(tableCar.vnetid, chestOpenReturn)
+    closeInventoryUi()
 end
 
-RegisterNUICallback("usarItem", function(data)
+RegisterNUICallback("usarItem", function(data, cb)
     if data.item then
         dPNserver.useItem(data.item, data.amount, data.type, data.slot, ConfigClient['keyBindWeapon'])
     end
+
+    if cb then cb("ok") end
+end)
+
+RegisterNUICallback("usarItemFechar", function(data, cb)
+    if data.item then
+        dPNserver.useItem(data.item, data.amount, data.type, data.slot, ConfigClient['keyBindWeapon'])
+    end
+
+    closeInventoryUi()
+
+    if cb then cb("ok") end
 end)
 
 RegisterNUICallback("enviarItem", function(data)

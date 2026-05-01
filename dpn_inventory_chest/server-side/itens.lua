@@ -4,42 +4,91 @@ local actived = {}
 local bandagem = {}
 local pick = {}
 
-function recarregarArma(source,user_id,item,amount,slot)
+local function normalizeWeaponItemName(item)
+    if not item then return nil end
+
+    if item:find("^WEAPON_") then
+        return item
+    end
+
+    return item:gsub("^wbody|", "")
+end
+
+local function getAmmoItemNameFromWeapon(weapon)
+    if not weapon then return nil end
+
+    local normalizedWeapon = normalizeWeaponItemName(weapon)
+    return normalizedWeapon:gsub("^WEAPON_", "AMMO_")
+end
+
+local function getWeaponNameFromAmmoItem(item)
+    if not item then return nil end
+
+    if item:find("^AMMO_") then
+        return item:gsub("^AMMO_", "WEAPON_")
+    end
+
+    local oldWeapon = item:gsub("^wammo|", "")
+    if oldWeapon and oldWeapon ~= item then
+        return oldWeapon
+    end
+
+    return item
+end
+
+function recarregarArma(source, user_id, item, amount, slot)
     local uweapons = vRPclient.getWeapons(source)
-    local weaponuse = string.gsub(item,"wammo|","")
-    local weaponusename = "wammo|"..weaponuse
+    local weaponuse = getWeaponNameFromAmmoItem(item)
+    local weaponusename = getAmmoItemNameFromWeapon(weaponuse)
     local identity = vRP.getUserIdentity(user_id)
+
+    if not weaponuse or not weaponusename then
+        return
+    end
+
     if uweapons[weaponuse] then
-        local itemAmount = 0
         local inventory = getPlayerInventory(user_id)
-        for k,v in pairs(inventory) do
+
+        for k, v in pairs(inventory) do
             if weaponusename == v.item then
                 if v.amount > 250 then
-                v.amount = 250
+                    v.amount = 250
                 end
 
-                itemAmount = v.amount
-        
-			    if vRP.tryGetInventoryItem(user_id,weaponusename,parseInt(amount),slot) then
-				    local weapons = {}
-				    weapons[weaponuse] = { ammo = amount }
-				    itemAmount = amount
-                    dPNclient._giveWeapons(source,weapons,false)
-                    
-				    SendWebhookMessage(ConfigServer['webhook'].equip,"```prolog\n[ID]: "..user_id.." "..identity.name.." "..identity.firstname.." \n[RECARREGOU]: "..item.." \n[MUNICAO]: "..amount.." "..os.date("\n[Data]: %d/%m/%Y [Hora]: %H:%M:%S").." \r```")
-			    end
+                if vRP.tryGetInventoryItem(user_id, weaponusename, parseInt(amount), slot) then
+                    local weapons = {}
+                    weapons[weaponuse] = { ammo = amount }
+
+                    dPNclient._giveWeapons(source, weapons, false)
+
+                    SendWebhookMessage(ConfigServer['webhook'].equip,
+                        "```prolog\n[ID]: " .. user_id .. " " .. identity.name .. " " .. identity.firstname ..
+                        " \n[RECARREGOU]: " .. item ..
+                        " \n[MUNICAO]: " .. amount ..
+                        " " .. os.date("\n[Data]: %d/%m/%Y [Hora]: %H:%M:%S") .. " \r```"
+                    )
+                end
+
+                break
             end
         end
     end
 end
 
-function equipWeapon(source, user_id,item,amount,slot)
-    if vRP.tryGetInventoryItem(user_id,item,1,slot) then
+function equipWeapon(source, user_id, item, amount, slot)
+    if vRP.tryGetInventoryItem(user_id, item, 1, slot) then
         local weapons = {}
         local identity = getUserIdentity(user_id)
-        weapons[string.gsub(item,"wbody|","")] = { ammo = 0 }
-        dPNclient._giveWeapons(source,weapons,false)
-        SendWebhookMessage(ConfigServer['webhook'].equip,"```prolog\n[ID]: "..user_id.." "..identity.name.." "..identity.firstname.." \n[EQUIPOU]: "..item.." "..os.date("\n[Data]: %d/%m/%Y [Hora]: %H:%M:%S").." \r```")
+        local weaponName = normalizeWeaponItemName(item)
+
+        weapons[weaponName] = { ammo = 0 }
+        dPNclient._giveWeapons(source, weapons, false)
+
+        SendWebhookMessage(ConfigServer['webhook'].equip,
+            "```prolog\n[ID]: " .. user_id .. " " .. identity.name .. " " .. identity.firstname ..
+            " \n[EQUIPOU]: " .. item ..
+            " " .. os.date("\n[Data]: %d/%m/%Y [Hora]: %H:%M:%S") .. " \r```"
+        )
     end
 end
 
@@ -723,43 +772,43 @@ function itensUse(source, user_id, item, amount, type, slot)
         elseif item == "P-WEAPON_ASSAULTRIFLE" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_ASSAULTRIFLE",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_ASSAULTRIFLE",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_ASSAULTRIFLE",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_PISTOL_MK2" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_PISTOL_MK2",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_PISTOL_MK2",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_PISTOL_MK2",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_ASSAULTSMG" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_ASSAULTSMG",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_ASSAULTSMG",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_ASSAULTSMG",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_MICROSMG" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_MICROSMG",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_MICROSMG",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_MICROSMG",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_SMG" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_SMG",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_SMG",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_SMG",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_REVOLVER" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_REVOLVER",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_REVOLVER",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_REVOLVER",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         elseif item == "P-WEAPON_GUSENBERG" then  ------- OK ------- OK
             if vRP.tryGetInventoryItem(user_id,"P-WEAPON_GUSENBERG",1,slot) then
                     dPNclient.updateInventory(source)
-                    vRP.giveInventoryItem(user_id,"wammo|WEAPON_GUSENBERG",30)
+                    vRP.giveInventoryItem(user_id,"AMMO_GUSENBERG",30)
                     TriggerClientEvent("Notify",source,"sucesso","Caixa aberta!",8000)
             end	
         --------------------------------------------------------

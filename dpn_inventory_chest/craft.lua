@@ -2,7 +2,7 @@ ConfigCraft = {
     craft = {
         
         ['arma1'] = {
-            resultado = {name = "wbody|WEAPON_ASSAULTRIFLE", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_ASSAULTRIFLE", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66}, 
                 {-1870.55, 2061.79, 135.44},
@@ -26,7 +26,7 @@ ConfigCraft = {
             },
         },
         ['arma2'] = {
-            resultado = {name = "wbody|WEAPON_PISTOL_MK2", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_PISTOL_MK2", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
@@ -50,7 +50,7 @@ ConfigCraft = {
             },
         },
         ['arma3'] = {
-            resultado = {name = "wbody|WEAPON_ASSAULTSMG", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_ASSAULTSMG", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
@@ -74,7 +74,7 @@ ConfigCraft = {
             },
         },
         ['arma4'] = {
-            resultado = {name = "wbody|WEAPON_MICROSMG", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_MICROSMG", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
@@ -98,7 +98,7 @@ ConfigCraft = {
             },
         },
         ['arma5'] = {
-            resultado = {name = "wbody|WEAPON_SMG", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_SMG", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
@@ -122,7 +122,7 @@ ConfigCraft = {
             },
         },
         ['arma6'] = {
-            resultado = {name = "wbody|WEAPON_REVOLVER", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_REVOLVER", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
@@ -146,7 +146,7 @@ ConfigCraft = {
             },
         },
         ['arma7'] = {
-            resultado = {name = "wbody|WEAPON_GUSENBERG", amount = 1}, -- Item e quantidade craftado
+            resultado = {name = "WEAPON_GUSENBERG", amount = 1}, -- Item e quantidade craftado
             loc = {
                 {-1518.26, 125.34, 48.66},
                 {-1870.55, 2061.79, 135.44},
